@@ -1,6 +1,7 @@
 # tictactoe_ai.py
-# Minmax logic for Tic-Tac-Toe
+# Heurestic logic 
 # Authors: Md Hasibur Rahman and Sanjida AKhter
+
 import math
 
 def check_winner(board):
