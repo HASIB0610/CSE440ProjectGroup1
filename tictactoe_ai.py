@@ -1,5 +1,6 @@
 # tictactoe_ai.py
-
+# Minmax logic for Tic-Tac-Toe
+# Authors: Md Hasibur Rahman and Sanjida AKhter
 import math
 
 def check_winner(board):
@@ -14,6 +15,7 @@ def check_winner(board):
     if " " not in board:
         return "Draw"
     return None
+
 
 def heuristic(board, player):
     opponent = 'O' if player == 'X' else 'X'
