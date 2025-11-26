@@ -1,5 +1,3 @@
-# Minmax logic for Tic-Tac-Toe
-# Authors: Md Hasibur Rahman and Sanjida AKhter
 # tictactoe_ai.py
 
 import math
