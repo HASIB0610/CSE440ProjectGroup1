@@ -2,7 +2,9 @@
 # Heurestic logic 
 # Authors: Md Hasibur Rahman and Sanjida AKhter
 
+
 import math
+nodes_explored = 0
 
 def check_winner(board):
     lines = [
@@ -49,6 +51,9 @@ def minimax(board, depth=0, alpha=-math.inf, beta=math.inf,
     Minimax with alpha-beta. Scores are always from `player` (AI) perspective.
     If `use_heuristic` is True, apply a depth cutoff and return heuristic at cutoff.
     """
+    global nodes_explored
+    nodes_explored += 1
+
     winner = check_winner(board)
     if winner:
         if winner == player:           # AI wins

@@ -21,7 +21,7 @@ def play_game(human_player, ai_player, cutoff):
         if current_player == human_player:
             player_move(board, human_player)
         else:
-            ai_move(board, ai_player, use_heuristic, cutoff)
+            ai_move(board, ai_player, use_heuristic, cutoff, show_stats=True)
 
         current_player = "O" if current_player == "X" else "X"
         print()
